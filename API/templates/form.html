@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block form %}
+
+<form class="contact100-form validate-form" method="POST" action="/API_response_form">
+	<span class="contact100-form-title">
+		Let's predict your League Index !
+	</span>
+
+	<div class="wrap-input100 validate-input" data-validate="Age is required">
+		<span class="label-input100">Age</span>
+		<input class="input100" type="number" min=0 name="Age" placeholder="Enter Age" required value=21>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="HoursPerWeek is required">
+		<span class="label-input100">HoursPerWeek</span>
+		<input class="input100" type="number" min=0 name="HoursPerWeek" placeholder="Enter HoursPerWeek" required value=16>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="TotalHours is required">
+		<span class="label-input100">TotalHours</span>
+		<input class="input100" type="number" min=0 name="TotalHours" placeholder="Enter TotalHours" required value=960>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="APM is required">
+		<span class="label-input100">APM</span>
+		<input class="input100" type="number" min=0 step="0.1" name="APM" placeholder="Enter APM" required value=117>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="SelectByHotkeys is required">
+		<span class="label-input100">SelectByHotkeys</span>
+		<input class="input100" type="number" min=0 step="0.001" name="SelectByHotkeys" placeholder="Enter SelectByHotkeys" required value=0.004>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="AssignToHotkeys is required">
+		<span class="label-input100">AssignToHotkeys</span>
+		<input class="input100" type="number" min=0 step="0.0001" name="AssignToHotkeys" placeholder="Enter AssignToHotkeys" required value=0.0004>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="UniqueHotkeys is required">
+		<span class="label-input100">UniqueHotkeys</span>
+		<input class="input100" type="number" min=0 name="UniqueHotkeys" placeholder="Enter UniqueHotkeys" required value=5>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="MinimapAttacks is required">
+		<span class="label-input100">MinimapAttacks</span>
+		<input class="input100" type="number" min=0 step="0.000001" name="MinimapAttacks" placeholder="Enter MinimapAttacks" required value=0.0001>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="MinimapRightClicks is required">
+		<span class="label-input100">MinimapRightClicks</span>
+		<input class="input100" type="number" min=0 step="0.00001" name="MinimapRightClicks" placeholder="Enter MinimapRightClicks" required value=0.0004>
+		<span class="focus-input100"></span>
+	</div>
+	
+	<div class="wrap-input100 validate-input" data-validate="NumberOfPACs is required">
+		<span class="label-input100">NumberOfPACs</span>
+		<input class="input100" type="number" min=0 step="0.0001" name="NumberOfPACs" placeholder="Enter NumberOfPACs" required value=0.0035>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="GapBetweenPACs is required">
+		<span class="label-input100">GapBetweenPACs</span>
+		<input class="input100" type="number" min=0 step="0.1" name="GapBetweenPACs" placeholder="Enter GapBetweenPACs" required value=40>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="ActionLatency is required">
+		<span class="label-input100">ActionLatency</span>
+		<input class="input100" type="number" min=0 step="0.1" name="ActionLatency" placeholder="Enter ActionLatency" required value=64>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="ActionsInPAC is required">
+		<span class="label-input100">ActionsInPAC</span>
+		<input class="input100" type="number" min=0 step="0.1" name="ActionsInPAC" placeholder="Enter ActionsInPAC" required value=5>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="TotalMapExplored is required">
+		<span class="label-input100">TotalMapExplored</span>
+		<input class="input100" type="number" min=0 name="TotalMapExplored" placeholder="Enter TotalMapExplored" required value=22>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="WorkersMade is required">
+		<span class="label-input100">WorkersMade</span>
+		<input class="input100" type="number" min=0 step="0.00001" name="WorkersMade" placeholder="Enter WorkersMade" required value=0.001>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="UniqueUnitsMade is required">
+		<span class="label-input100">UniqueUnitsMade</span>
+		<input class="input100" type="number" min=0 name="UniqueUnitsMade" placeholder="Enter UniqueUnitsMade" required value=6>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="ComplexUnitsMade is required">
+		<span class="label-input100">ComplexUnitsMade</span>
+		<input class="input100" type="number" min=0 step="0.000001" name="ComplexUnitsMade" placeholder="Enter ComplexUnitsMade" required value=0.00006>
+		<span class="focus-input100"></span>
+	</div>
+
+	<div class="wrap-input100 validate-input" data-validate="ComplexAbilitiesUsed is required">
+		<span class="label-input100">ComplexAbilitiesUsed</span>
+		<input class="input100" type="number" min=0 step="0.00001" name="ComplexAbilitiesUsed" placeholder="Enter ComplexAbilitiesUsed" required value=0.0001>
+		<span class="focus-input100"></span>
+	</div>
+
+
+	<div class="container-contact100-form-btn">
+		<div class="wrap-contact100-form-btn">
+			<div class="contact100-form-bgbtn"></div>
+			<button class="contact100-form-btn">
+				<span>
+					Predict
+					<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+				</span>
+			</button>
+		</div>
+	</div>
+</form>
+
+{% endblock %}
