@@ -13,7 +13,7 @@
   <p align="center">
     <i>Are you really a GrandMaster ?</i>
     <br />
-    <a href="https://github.com/VictorGoubet/ConnectUltra/blob/master/Notebook.ipynb"><strong>Check the code »</strong></a>
+    <a href="https://github.com/VictorGoubet/StarCraftOracle/blob/master/Notebook.ipynb"><strong>Check the code »</strong></a>
     <br />
     <br />
     <a href="https://github.com/VictorGoubet/StarCraftOracle/issues">Report Bug</a>
@@ -107,11 +107,11 @@ execute the following steps:
 
 1. Starting the server
 
-  ```sh
-    python API/server.py
-  ```
+    ```sh
+      python API/server.py
+    ```
 
-2. Go to localhost:5000/API_form
+2. Go to **localhost:5000/API_form** in a browser
 
 3. Try it yourself! 
 
