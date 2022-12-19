@@ -133,6 +133,11 @@ You can also check the *dev_request_example.py* file to see how to make some pre
 </br>
 Victor Goubet - victorgoubet@orange.fr  
 
+[![LinkedIn][linkedin-shield]][linkedin-url-chloe]
+</br>
+Chloé Daems - chloedaems0@gmail.com
+
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [forks-shield]: https://img.shields.io/github/forks/VictorGoubet/StarCraftOracle.svg?style=for-the-badge
@@ -143,5 +148,6 @@ Victor Goubet - victorgoubet@orange.fr
 [issues-url]: https://github.com/VictorGoubet/StarCraftOracle/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/victorgoubet/
+[linkedin-url-chloe]: https://www.linkedin.com/in/chloe-daems/
 [product-screenshot]: screenshot.PNG
 [minmax-screenshot]: MinMax.jpg
